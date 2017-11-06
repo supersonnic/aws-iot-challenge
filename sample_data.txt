@@ -1,0 +1,129 @@
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.23  Y: 0.25  Z: 9.81
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.30  Y: 0.22  Z: 9.91
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.25  Y: 0.28  Z: 9.79
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.24  Y: 0.24  Z: 9.82
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.21  Y: 0.25  Z: 9.74
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.24  Y: 0.23  Z: 9.77
+Sound sensor: 341
+Temperature 29.13 *C
+X: 1.25  Y: 0.25  Z: 9.81
+Sound sensor: 341
+Temperature 29.13 *C
+X: 1.26  Y: 0.26  Z: 9.78
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.29  Y: 0.25  Z: 9.78
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.25  Y: 0.23  Z: 9.80
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.25  Y: 0.23  Z: 9.80
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.26  Y: 0.26  Z: 9.74
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.26  Y: 0.23  Z: 9.82
+Sound sensor: 341
+Temperature 29.13 *C
+X: 1.25  Y: 0.25  Z: 9.67
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.26  Y: 0.30  Z: 9.74
+Sound sensor: 341
+Temperature 29.13 *C
+X: 1.25  Y: 0.26  Z: 9.74
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.25  Y: 0.25  Z: 9.80
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.26  Y: 0.20  Z: 9.76
+Sound sensor: 340
+Temperature 29.13 *C
+X: 1.28  Y: 0.22  Z: 9.83
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.24  Y: 0.24  Z: 9.76
+Sound sensor: 341
+Temperature 29.13 *C
+X: 1.25  Y: 0.20  Z: 9.75
+Sound sensor: 340
+Temperature 29.13 *C
+X: 1.25  Y: 0.26  Z: 9.86
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.27  Y: 0.23  Z: 9.84
+Sound sensor: 339
+Temperature 29.13 *C
+X: 1.26  Y: 0.23  Z: 9.75
+Sound sensor: 341
+Temperature 29.13 *C
+X: 1.24  Y: 0.27  Z: 9.81
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.25  Y: 0.25  Z: 9.70
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.23  Y: 0.24  Z: 9.79
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.25  Y: 0.26  Z: 9.79
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.22  Y: 0.22  Z: 9.77
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.26  Y: 0.21  Z: 9.77
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.25  Y: 0.26  Z: 9.86
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.26  Y: 0.20  Z: 9.73
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.26  Y: 0.24  Z: 9.80
+Sound sensor: 339
+Temperature 29.13 *C
+X: 1.24  Y: 0.23  Z: 9.73
+Sound sensor: 338
+Temperature 29.13 *C
+X: 1.32  Y: 0.26  Z: 9.71
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.27  Y: 0.23  Z: 9.67
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.28  Y: 0.22  Z: 9.78
+Sound sensor: 341
+Temperature 29.13 *C
+X: 1.29  Y: 0.23  Z: 9.75
+Sound sensor: 338
+Temperature 29.13 *C
+X: 1.31  Y: 0.25  Z: 9.66
+Sound sensor: 343
+Temperature 29.13 *C
+X: 1.22  Y: 0.27  Z: 9.72
+Sound sensor: 341
+Temperature 29.13 *C
+X: 1.26  Y: 0.21  Z: 9.76
+Sound sensor: 340
+Temperature 29.13 *C
+X: 1.22  Y: 0.27  Z: 9.94
+Sound sensor: 342
+Temperature 29.13 *C
+X: 1.18  Y: 0.22  Z: 9.
