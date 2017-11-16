@@ -24,21 +24,24 @@ Since you are given access to my AWS account as well as the certificate files in
 To test this for yourself, you will need to create an AWS account and follow the below architecture to set up the appropriate services. This following overview will help you visualize the AWS architecture and create services used. Additionally, all the services and the setting for each service is listed.
 ![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/chart.png)
 #### List of services
-1. AWS IoT
-  * Rule query statement
-    * `SELECT Noise, Temperature, X, Y, Z, deviceID, dateTime FROM 'omega2/3D0D'`
-  * Actions
-    * Send messages to an Amazon Kinesis Firehose
-      * Stream name: IoT_Source
-      * Separator: \n (newline)
+1. Create a S3 bucket named "omega2-data" with all the default settings
+
 2. AWS Kinesis Firehose delivery streams
   * IoT_Source
   * IoT_Dest_Data
   * IoT_Dest_Aggregate_XYZ
   * IoT_Dest_Aggregate_Temperature
   * Settings: Change source to Direct PUT and S3 buffer interval to 60 seconds for all the firehoses. Additionally, select "omega2-data" as the S3 bucket in use. Use prefixes for each data stream to keep things organized.
+  
+3. AWS IoT
+  * Rule query statement
+    * `SELECT Noise, Temperature, X, Y, Z, deviceID, dateTime FROM 'omega2/3D0D'`
+  * Actions
+    * Send messages to an Amazon Kinesis Firehose
+      * Stream name: IoT_Source
+      * Separator: \n (newline)
 
-3. AWS Kinesis Analytics applications
+4. AWS Kinesis Analytics applications
   * IoT_Data_Analytics
     * Source: Firehose delivery stream "IoT_Source"
     * Real time analytics SQL code and destinations:
