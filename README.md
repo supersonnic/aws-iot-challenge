@@ -18,10 +18,11 @@ To facilitate testing, I have modified the main node.js program to read the sens
 Since you will be given access to my AWS account as well as the certificate files in the zipped archive, you can used run this program on any device and observe that the data is being sent to my S3 bucket and visualize it. Following describes the steps:
 1. Unzip the provided archive: "aws-iot-challenge.zip"
 2. Install NPM dependencies:
- * Open a command-line or terminal in the root directory and execute:
- `npm install`
+ * Open a command-line or terminal in the root directory and execute: `npm install`
 3. Run the index-sample.js prgram:
+
 `node index-sample.js --host-name=ao9xjarl08y9j.iot.us-east-1.amazonaws.com --private-key=omega2-3d0d.private.key --client-certificate=omega2-3d0d.cert.pem --ca-certificate=root-CA.crt`
+
 ***Please note: Make sure you are running the 'index-sample' program. The 'index-live' program can only be used with hardware!*** 
 
 ### For the public:
