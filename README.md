@@ -15,7 +15,7 @@ This repository contais the project files for KinetiConnect: Multidimensional Mo
 To facilitate testing, I have modified the main node.js program to read the sensor data from a sample file. The sample file was created using a Python program running on the Omega2+, collecting actual sensor data from the Circuit Playground over a 2-minute ride. The test program reads the file line-by-line in 1 second intervals, as if the data was being sent from the Circuit Playground sensors. The test program then appends a time stamp and device ID to the line and publishes the packaged JSON object to AWS IoT. This program would run on the Omega2+ (embedded Linux device) during a ride, therefore the timestamp would be reflective of the time the data was collected.
 
 ### For judges:
-Since you are given access to my AWS account as well as the certificate files in the zipped archive, you can used run this program on any device and observe that the data is being sent to my S3 bucket and visualize it. Following describes the steps:
+Since you will be given access to my AWS account as well as the certificate files in the zipped archive, you can used run this program on any device and observe that the data is being sent to my S3 bucket and visualize it. Following describes the steps:
 1. Clone this repository:
 2. Install NPM dependencies:
 3. Run the index-sample.js prgram:
@@ -70,7 +70,7 @@ SELECT STREAM FLOOR("SOURCE_SQL_STREAM_001".ROWTIME TO MINUTE) AS "dateTime", MA
 | Firehose delivery stream IoT_Dest_Data                  | DESTINATION_SQL_Data_STREAM      |
 
 5. AWS QuickSight Visualizations
- * Create a new visualization using S3 bucket data. Use the following manifest:
+ * Create a new visualization using S3 bucket data. Use manifest.json file with this code:
  ```
  {
     "fileLocations": [
@@ -87,3 +87,15 @@ SELECT STREAM FLOOR("SOURCE_SQL_STREAM_001".ROWTIME TO MINUTE) AS "dateTime", MA
     }
 }
  ```
+ ## Hardware Overview
+There are two pieces of hardware used in this project, one is the Onion Omega2+, which is an embedded Linux computer and the other is the Adafruit Circuit Playground, which is a micro-controller and is used here for its set of comprehensive on-board sensors and cool-looking lights!
+
+The micro-controller is programmed to measure 3D acceleration, temperature and noise every 1 second! It then sends that data to the Omega2+ using UART protocol. The Omega2+ then sends that data to AWS IoT using MQTT protocol.
+
+![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/IMG_20171114_175343598.jpg)
+
+User initiates live sampling:
+![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/initiate.gif)
+
+User stops the trip, sending the 'end' signal and terminating the node.js program:
+![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/giphy.gif)
