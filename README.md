@@ -98,6 +98,6 @@ The micro-controller is programmed to measure 3D acceleration, temperature and n
 ![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/initiate.gif)                                              
 *User initiates live sampling*
 
-![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/giphy.gif)                                                 
+![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/end.gif)                                                 
 
 *User stops the trip, sending the 'end' signal and terminating the node.js program*
