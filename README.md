@@ -93,13 +93,11 @@ There are two pieces of hardware used in this project, one is the Onion Omega2+,
 The micro-controller is programmed to measure 3D acceleration, temperature and noise every 1 second! It then sends that data to the Omega2+ using UART protocol. The Omega2+ then sends that data to AWS IoT using MQTT protocol.
 
 ![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/IMG_20171114_175343598.jpg)
-
 *Hardware Overview*
 
-![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/initiate.gif)
-
+![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/initiate.gif)                                              
 *User initiates live sampling*
 
-![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/giphy.gif)
+![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/giphy.gif)                                                 
 
 *User stops the trip, sending the 'end' signal and terminating the node.js program*
