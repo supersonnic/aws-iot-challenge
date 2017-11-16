@@ -68,3 +68,22 @@ SELECT STREAM FLOOR("SOURCE_SQL_STREAM_001".ROWTIME TO MINUTE) AS "dateTime", MA
 | Firehose delivery stream IoT_Dest_Aggregate_Temperature | DESTINATION_SQL_AGGREGATE_TEMP   |
 | Firehose delivery stream IoT_Dest_Aggregate_XYZ         | DESTINATION_SQL_AGGREGATE_STREAM |
 | Firehose delivery stream IoT_Dest_Data                  | DESTINATION_SQL_Data_STREAM      |
+
+5. AWS QuickSight Visualizations
+ * Create a new visualization using S3 bucket data. Use the following manifest:
+ ```
+ {
+    "fileLocations": [
+              {
+                "URIPrefixes": [
+                  "https://s3.amazonaws.com/omega2-data/data/"
+                  ]
+                }
+     ],
+     "globalUploadSettings": {
+     "format": "CSV",
+     "delimiter": ",",
+     "containsHeader": "false"
+    }
+}
+ ```
