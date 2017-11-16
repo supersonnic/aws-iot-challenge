@@ -23,7 +23,12 @@ Since you will be given access to my AWS account as well as the certificate file
 
 `node index-sample.js --host-name=ao9xjarl08y9j.iot.us-east-1.amazonaws.com --private-key=omega2-3d0d.private.key --client-certificate=omega2-3d0d.cert.pem --ca-certificate=root-CA.crt`
 
-***Please note: Make sure you are running the 'index-sample' program. The 'index-live' program can only be used with hardware!*** 
+***Note: Make sure you are running the 'index-sample' program. The 'index-live' program can only be used with hardware!*** 
+
+4. You can log in to AWS console using the information provided to view the services used and the data being added to the S3 bucket. Furthermore, you can view the generated visualizations here: https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/d9eb88de-c134-415a-83b7-27b4c3c0487f
+
+***Note: QuickSight is currently showing the data that I published myself. This data is from a 22-minute trip. If you wish to view the new data that was published by you, first delete the data stored in the databes, then publish the data using the program and 'refresh' the QuickSight dataset to view the current data. Alternatively you can upload a manifest with the specific path to the new data.*** 
+
 
 ### For the public:
 To test this for yourself, you will need to create an AWS account and follow the below architecture to set up the appropriate services. This following overview will help you visualize the AWS architecture and create services used. Additionally, all the services and the setting for each service is listed.
