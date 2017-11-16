@@ -41,7 +41,8 @@ To test this for yourself, you will need to create an AWS account and follow the
 3. AWS Kinesis Analytics applications
   * IoT_Data_Analytics
     * Source: Firehose delivery stream "IoT_Source"
-    * Real time analytics SQL code:
+    * Real time analytics SQL code and destinations:
+    
 ```
 CREATE OR REPLACE STREAM "DESTINATION_SQL_Data_STREAM" (Noise INTEGER, Temperature DECIMAL(4,2), X DECIMAL(4,2), Y DECIMAL(4,2), Z DECIMAL(4,2), deviceID VARCHAR(4), dateTime TIMESTAMP);
 
@@ -58,8 +59,7 @@ CREATE OR REPLACE STREAM "DESTINATION_SQL_AGGREGATE_TEMP" (dateTime TIMESTAMP, m
 CREATE OR REPLACE PUMP "STREAM_PUMP_3" AS INSERT INTO "DESTINATION_SQL_AGGREGATE_TEMP"
 SELECT STREAM FLOOR("SOURCE_SQL_STREAM_001".ROWTIME TO MINUTE) AS "dateTime", MAX("Temperature") AS "maxTemperature", MIN("Temperature") AS "minTemperature" FROM "SOURCE_SQL_STREAM_001" GROUP BY FLOOR("SOURCE_SQL_STREAM_001".ROWTIME TO MINUTE);
 ```
-    * Destinations:
-    
+
 | Destination                                             | In-application stream name       |
 |---------------------------------------------------------|----------------------------------|
 | Firehose delivery stream IoT_Dest_Aggregate_Temperature | DESTINATION_SQL_AGGREGATE_TEMP   |
