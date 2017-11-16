@@ -1,5 +1,5 @@
 # AWS IoT Challenge: KinetiConnect
-This repository contais the project files for KinetiConnect: Multidimensional Motion Quantification. In this poject I use a number of AWS technologies to visualize 3D acceleration data. The data is collected from acceleration sensor of [Adafruit Circuit Playground](https://www.adafruit.com/product/3000) and is send to the [Onion Omega2+](https://onion.io/store/omega2p/) embedded Linux system through UART protocol. The AWS technologies used include [AWS IoT](https://aws.amazon.com/iot/), [AWS Kinesis](https://aws.amazon.com/kinesis/) and [AWS QuickSight](https://quicksight.aws/).
+This repository contains the project files for KinetiConnect: Multidimensional Motion Quantification. In this project I use a number of AWS technologies to visualize 3D acceleration data. The data is collected from acceleration sensor of [Adafruit Circuit Playground](https://www.adafruit.com/product/3000) and is send to the [Onion Omega2+](https://onion.io/store/omega2p/) embedded Linux system through UART protocol. The AWS technologies used include [AWS IoT](https://aws.amazon.com/iot/), [AWS Kinesis](https://aws.amazon.com/kinesis/) and [AWS QuickSight](https://quicksight.aws/).
 
 ## Folder Structure
 * aws-iot-challenge
@@ -19,7 +19,7 @@ Since you will be given access to my AWS account as well as the certificate file
 1. Unzip the provided archive: "aws-iot-challenge.zip"
 2. Install NPM dependencies:
  * Open a command-line or terminal in the root directory and execute: `npm install`
-3. Run the index-sample.js prgram:
+3. Run the index-sample.js program:
 
 `node index-sample.js --host-name=ao9xjarl08y9j.iot.us-east-1.amazonaws.com --private-key=omega2-3d0d.private.key --client-certificate=omega2-3d0d.cert.pem --ca-certificate=root-CA.crt`
 
@@ -27,7 +27,7 @@ Since you will be given access to my AWS account as well as the certificate file
 
 4. You can log in to AWS console using the information provided to view the services used and the data being added to the S3 bucket. Furthermore, you can view the generated visualizations here: https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/d9eb88de-c134-415a-83b7-27b4c3c0487f
 
-***Note: QuickSight is currently showing the data that I published myself. This data is from a 22-minute trip. If you wish to view the new data that was published by you, first delete the data stored in the databes, then publish the data using the program and 'refresh' the QuickSight dataset to view the current data. Alternatively you can upload a manifest with the specific path to the new data.*** 
+***Note: QuickSight is currently showing the data that I published myself. This data is from a 22-minute trip. If you wish to view the new data that was published by you, first delete the data stored in the database, then publish the data using the program (step 3), and 'refresh' the QuickSight dataset to view the current data. Alternatively you can upload a manifest with the specific path to the new data.*** 
 
 
 ### For the public:
