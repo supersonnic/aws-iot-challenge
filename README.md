@@ -15,11 +15,11 @@ This repository contains the project files for KinetiConnect: Multidimensional M
 To facilitate testing, I have modified the main node.js program to read the sensor data from a sample file. The sample file was created using a Python program running on the Omega2+, collecting actual sensor data from the Circuit Playground over a 2-minute ride. The test program reads the file line-by-line in 1 second intervals, as if the data was being sent from the Circuit Playground sensors. The test program then appends a time stamp and device ID to the line and publishes the packaged JSON object to AWS IoT. This program would run on the Omega2+ (embedded Linux device) during a ride, therefore the timestamp would be reflective of the time the data was collected.
 
 ### For judges:
-Since you will be given access to my AWS account as well as the certificate files in the zipped archive, you can used run this program on any device and observe that the data is being sent to my S3 bucket and visualize it. Following describes the steps:
+Since you are given access to my AWS account as well as the certificate files in the zipped archive, you can run this program on any device and observe that the data is being sent to my S3 bucket and visualize it. Following describes the steps:
 1. Unzip the provided archive: "aws-iot-challenge.zip"
 2. Install NPM dependencies:
- * Open a command-line or terminal in the root directory and execute: `npm install`
-3. Run the index-sample.js program:
+ * Open a command-line or terminal inside the directory "aws-iot-challenge" and run: `npm install`
+3. Start the index-sample.js program:
 
 `node index-sample.js --host-name=ao9xjarl08y9j.iot.us-east-1.amazonaws.com --private-key=omega2-3d0d.private.key --client-certificate=omega2-3d0d.cert.pem --ca-certificate=root-CA.crt`
 
@@ -27,11 +27,11 @@ Since you will be given access to my AWS account as well as the certificate file
 
 4. You can log in to AWS console using the information provided to view the services used and the data being added to the S3 bucket. Furthermore, you can view the generated visualizations here: https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/d9eb88de-c134-415a-83b7-27b4c3c0487f
 
-***Note: QuickSight is currently showing the data that I published myself. This data is from a 22-minute trip. If you wish to view the new data that was published by you, first delete the data stored in the database, then publish the data using the program (step 3), and 'refresh' the QuickSight dataset to view the current data. Alternatively you can upload a manifest with the specific path to the new data.*** 
+***Note: QuickSight is currently showing the data that I published myself. This data is from a 22-minute trip. If you wish to view the new data that was published by you, first delete the data stored in the database, then publish the data using the program (step 3), and 'refresh' the QuickSight dataset to view the current data. Alternatively you can upload a new manifest with the specific path to the new data stored on S3.***
 
 
 ### For the public:
-To test this for yourself, you will need to create an AWS account and follow the below architecture to set up the appropriate services. This following overview will help you visualize the AWS architecture and create services used. Additionally, all the services and the setting for each service is listed.
+To test this for yourself, you will need to create an AWS account and follow the below architecture to set up the appropriate services. The following diagram will help you visualize the AWS architecture and create services used. Additionally, all the services and the setting for each service is listed.
 ![Image](https://github.com/supersonnic/aws-iot-challenge/blob/master/Images/chart.png)
 #### List of services
 1. Create a S3 bucket named "omega2-data" with all the default settings
